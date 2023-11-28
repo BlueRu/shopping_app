@@ -14,7 +14,7 @@ class BottomCartSheet extends StatelessWidget {
 
     return Material(
       child: Container(
-        height: 800,
+        height: 600,
         padding: EdgeInsets.all(20),
         color: Colors.blue[100],
         child: SingleChildScrollView(
