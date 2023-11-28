@@ -1,13 +1,14 @@
 {
   "project_info": {
-    "project_number": "664330226574",
-    "project_id": "chat-app-bb8e7",
-    "storage_bucket": "chat-app-bb8e7.appspot.com"
+    "project_number": "431616007754",
+    "firebase_url": "https://shopping-app-7e989-default-rtdb.firebaseio.com",
+    "project_id": "shopping-app-7e989",
+    "storage_bucket": "shopping-app-7e989.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:664330226574:android:ee4361d5aad1d7f4f872df",
+        "mobilesdk_app_id": "1:431616007754:android:9db3741495f7d1531950b3",
         "android_client_info": {
           "package_name": "com.example.message_board_app"
         }
@@ -15,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDy5X8cdWv2D7In-3sZh5MNjU4vs9PlJoE"
+          "current_key": "AIzaSyB4S5cluxUWXFAxl2tQZxYx0k6Yg12z_Tc"
         }
       ],
       "services": {

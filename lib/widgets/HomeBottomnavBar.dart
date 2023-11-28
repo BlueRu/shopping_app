@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:message_board_app/pages/categories_page.dart';
 import 'package:sliding_sheet/sliding_sheet.dart';
 
 import 'BottomCartSheet.dart';
@@ -23,10 +24,18 @@ class HomeBottomnavBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Icon(
-            Icons.category_outlined,
-            color: Colors.white,
-            size: 32,
+          InkWell(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => CategoriesPage()),
+              );
+            },
+            child: Icon(
+              Icons.category_outlined,
+              color: Colors.white,
+              size: 32,
+            ),
           ),
           InkWell(
             onTap: () {

@@ -45,6 +45,8 @@ dependencies:
   sliding_sheet: ^0.5.2
   sliding_up_panel2: ^3.3.0+1
   flutter_slidable: ^3.0.1
+  equatable: ^2.0.5
+
 
 dev_dependencies:
   flutter_test:

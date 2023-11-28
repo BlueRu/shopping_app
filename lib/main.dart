@@ -11,7 +11,13 @@ import 'services/auth/login_or_register.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await Firebase.initializeApp(
+      options: const FirebaseOptions(
+    apiKey: "AIzaSyCKR8GXQbbif2cWkV6iQzys33cxE57D-gM",
+    appId: "1:431616007754:web:8c75c25cdfb171571950b3",
+    messagingSenderId: "431616007754",
+    projectId: "shopping-app-7e989",
+  ));
   runApp(
     ChangeNotifierProvider(
       create: (context) => AuthService(),
@@ -19,7 +25,6 @@ void main() async {
     ),
   );
 }
-
 
 int currentIndex = 0;
 
@@ -43,7 +48,6 @@ class MyApp extends StatelessWidget {
 //   }
 // }
 
-
 // class MyApp extends StatelessWidget {
 //   const MyApp({Key? key});
 
@@ -62,11 +66,10 @@ class MyApp extends StatelessWidget {
 //   }
 // }
 
- @override
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-     
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.blue[100],
       ),

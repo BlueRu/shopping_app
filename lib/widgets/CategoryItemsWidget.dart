@@ -1,41 +1,49 @@
+import 'dart:ffi';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'Product.dart';
 
 // 4 Item image below the scrolling row image
-class AllItemsWidget extends StatelessWidget {
-  const AllItemsWidget({
+class CategoryItemsWidget extends StatelessWidget {
+  const CategoryItemsWidget({
+    required this.category,
     super.key,
   });
 
+  final String category;
+
   @override
   Widget build(BuildContext context) {
-    List<Product> homeProduct = Product.products;
-    //.where((products) => products.category == category)
-    //.toList();
+    List<Product> homeProduct = Product.products
+        .where((products) => products.category == category)
+        .toList();
+    if (category == "All") {
+      homeProduct = Product.products;
+    }
     return GridView.count(
-        crossAxisCount: 2,
+        crossAxisCount: 3,
         childAspectRatio: 0.68,
-        physics: NeverScrollableScrollPhysics(),
+        physics: ScrollPhysics(),
         shrinkWrap: true,
         children: List.generate(
             homeProduct.length,
-            (index) => ItemCard(
+            (index) => CategoryCard(
                   product: homeProduct[index],
                 )));
   }
 }
 
-class ItemCard extends StatelessWidget {
+class CategoryCard extends StatelessWidget {
   final Product product;
-  const ItemCard({super.key, required this.product});
+  const CategoryCard({super.key, required this.product});
 
   @override
   Widget build(BuildContext context) {
     return GridView.count(
       crossAxisCount: 2,
       childAspectRatio: 0.68,
-      physics: NeverScrollableScrollPhysics(),
+      physics: ScrollPhysics(),
       shrinkWrap: true,
       children: [
         Container(

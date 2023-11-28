@@ -44,38 +44,42 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCqOU5nt7pgSpGWbWJIDhkA_V7K2nLQeCk',
-    appId: '1:664330226574:web:49c664305439be12f872df',
-    messagingSenderId: '664330226574',
-    projectId: 'chat-app-bb8e7',
-    authDomain: 'chat-app-bb8e7.firebaseapp.com',
-    storageBucket: 'chat-app-bb8e7.appspot.com',
-    measurementId: 'G-G8FS165H6P',
+    apiKey: 'AIzaSyCKR8GXQbbif2cWkV6iQzys33cxE57D-gM',
+    appId: '1:431616007754:web:8c75c25cdfb171571950b3',
+    messagingSenderId: '431616007754',
+    projectId: 'shopping-app-7e989',
+    authDomain: 'shopping-app-7e989.firebaseapp.com',
+    databaseURL: 'https://shopping-app-7e989-default-rtdb.firebaseio.com',
+    storageBucket: 'shopping-app-7e989.appspot.com',
+    measurementId: 'G-LTD2G5MPL3',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDy5X8cdWv2D7In-3sZh5MNjU4vs9PlJoE',
-    appId: '1:664330226574:android:ee4361d5aad1d7f4f872df',
-    messagingSenderId: '664330226574',
-    projectId: 'chat-app-bb8e7',
-    storageBucket: 'chat-app-bb8e7.appspot.com',
+    apiKey: 'AIzaSyB4S5cluxUWXFAxl2tQZxYx0k6Yg12z_Tc',
+    appId: '1:431616007754:android:9db3741495f7d1531950b3',
+    messagingSenderId: '431616007754',
+    projectId: 'shopping-app-7e989',
+    databaseURL: 'https://shopping-app-7e989-default-rtdb.firebaseio.com',
+    storageBucket: 'shopping-app-7e989.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBex9rsbSKddDcze6JCw6UcbX6yoHPkBLw',
-    appId: '1:664330226574:ios:2c976d75989cbdf5f872df',
-    messagingSenderId: '664330226574',
-    projectId: 'chat-app-bb8e7',
-    storageBucket: 'chat-app-bb8e7.appspot.com',
+    apiKey: 'AIzaSyAQL0mva1kqerGM3ejf9Ee-WSod3BBmnak',
+    appId: '1:431616007754:ios:4c8a1ddaf81892ed1950b3',
+    messagingSenderId: '431616007754',
+    projectId: 'shopping-app-7e989',
+    databaseURL: 'https://shopping-app-7e989-default-rtdb.firebaseio.com',
+    storageBucket: 'shopping-app-7e989.appspot.com',
     iosBundleId: 'com.example.messageBoardApp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBex9rsbSKddDcze6JCw6UcbX6yoHPkBLw',
-    appId: '1:664330226574:ios:60fa0171443035abf872df',
-    messagingSenderId: '664330226574',
-    projectId: 'chat-app-bb8e7',
-    storageBucket: 'chat-app-bb8e7.appspot.com',
+    apiKey: 'AIzaSyAQL0mva1kqerGM3ejf9Ee-WSod3BBmnak',
+    appId: '1:431616007754:ios:25028d1e1b6e429b1950b3',
+    messagingSenderId: '431616007754',
+    projectId: 'shopping-app-7e989',
+    databaseURL: 'https://shopping-app-7e989-default-rtdb.firebaseio.com',
+    storageBucket: 'shopping-app-7e989.appspot.com',
     iosBundleId: 'com.example.messageBoardApp.RunnerTests',
   );
 }

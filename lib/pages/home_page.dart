@@ -9,6 +9,8 @@ import 'categories_page.dart';
 import 'user_info.dart';
 import '../widgets/RowItemsWidget.dart';
 import '../widgets/AllItemsWidget.dart';
+import '../widgets/Product.dart' as prefix;
+
 // import 'chat_page.dart';
 import 'package:badges/badges.dart' as badges;
 
@@ -22,6 +24,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   //instance of auth
   final FirebaseAuth _auth = FirebaseAuth.instance;
+  User? user = FirebaseAuth.instance.currentUser;
 
   //sign user out
   void signOut() {
@@ -33,9 +36,10 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    String category = '';
     return Scaffold(
       appBar: AppBar(
-        title: Text('AppName'),
+        title: Text("Welcome, ${FirebaseAuth.instance.currentUser?.email}"),
         backgroundColor: Colors.blue[100],
         // leading: Builder(
         //   builder: (BuildContext context) {
